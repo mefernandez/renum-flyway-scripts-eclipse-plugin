@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/FlywayRenumFeature_1.0.0.202410191324.jar" id="FlywayRenumFeature" version="1.0.0.202410191324"/>
+</site>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="com.ondevio.eclipse.plugin.flyway.renumIncrementFilesCommand"
+            name="Renum Increment Flyway Files Command">
+      </command>
+      <command
+            id="com.ondevio.eclipse.plugin.flyway.renumDecrementFilesCommand"
+            name="Renum Decrement Flyway Files Command">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.ondevio.eclipse.plugin.flyway.RenumIncrementFilesHandler"
+            commandId="com.ondevio.eclipse.plugin.flyway.renumIncrementFilesCommand">
+      </handler>
+      <handler
+            class="com.ondevio.eclipse.plugin.flyway.RenumDecrementFilesHandler"
+            commandId="com.ondevio.eclipse.plugin.flyway.renumDecrementFilesCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.ondevio.eclipse.plugin.flyway.renumIncrementFilesCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Ctrl+Alt+S">
+      </key>
+      <key
+            commandId="com.ondevio.eclipse.plugin.flyway.renumDecrementFilesCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Ctrl+Alt+W">
+      </key>
+   </extension>
+
+</plugin>
